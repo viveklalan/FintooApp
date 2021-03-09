@@ -1,0 +1,1019 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0267EE53432FD5FE591F59EA5FC74B1F /* Pods-FintooAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FD051A33B94FA50025FEBCF41BF592 /* Pods-FintooAppTests-dummy.m */; };
+		066D03B9A240AD71B1FBBBBC1BA636FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0794D1B694E142505589C5422BECE9DD /* Pods-FintooAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC0564FFE2ACEF7A745AA475F5247A2 /* Pods-FintooAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083E1F15A6325136F05DEA95F3CE1786 /* FluidTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC2FEAA768831DFBD9C71A16C7F2067 /* FluidTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AF2A11DD128DD73959D46B9523CC684 /* FluidTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC885CD2A20E7F9E546BCE71E3270C /* FluidTabBarController.swift */; };
+		255997BAD1F7EB3DA8E282AA0E2CDCD9 /* FluidTabBarItemAnimatorDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EEE61C92F2D592E9017E60093AA84 /* FluidTabBarItemAnimatorDefault.swift */; };
+		2D0EE8B16C7C99DDFA4E4559C2389B55 /* TimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52256B846A7B301DDC967699CE571EA8 /* TimingFunctions.swift */; };
+		45CB93EE77232A2B8E5EDB076403A661 /* IconAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDEA4194A75AE03A5DD5F752B82CA7 /* IconAnimator.swift */; };
+		495EEF8592E714574CF9EDBCFE4BBEAE /* Pods-FintooApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62E04E5A01E3C4E8A633F7AF2230576A /* Pods-FintooApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		505FD7E1DF978DDFE92406BFF269A002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5562431FADE499D4314E5BE39F342C50 /* Pods-FintooApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A97B4268EAB112D9439F83B7B451BB2 /* Pods-FintooApp-dummy.m */; };
+		630E12F01B3DF474223929E570EB3CF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6C71D264CC7BD5ADB05C5305977875D5 /* Pods-FintooApp-FintooAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8977AC6B668307F0F05EEAE1F32F0B4F /* Pods-FintooApp-FintooAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78314B5B4DC6781780435DAFE5270FD6 /* LabelAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EFAF3C24E87DA31ABDE678BED3B95 /* LabelAnimator.swift */; };
+		970EC4876F7BC99A72DB3A6DF8421863 /* FluidTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625197FE3C985EB31427472B52088C66 /* FluidTabBarItemContainer.swift */; };
+		9A14DD7AD10909C22BDFFB285F663919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A2B93B42FEAA4957181B01DCCA1174C7 /* FluidTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025D2A4F94197F72268AC894B202B068 /* FluidTabBarItem.swift */; };
+		ABCBE17F23EE7E929379E38AB8BEC218 /* CurveLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B9682D27CE994E953B802C4542018C /* CurveLayer.swift */; };
+		B19E46E970A73E24FAD26F9C73ED3FC4 /* FluidTabBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BFCEAD322BAF754B4EDB6CC3CBF5C9 /* FluidTabBarItemContentView.swift */; };
+		BEC8008A8522BB172F9677FE1A622CEC /* Pods-FintooApp-FintooAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E25409CA9E22B8434168EFA7D3B8524D /* Pods-FintooApp-FintooAppUITests-dummy.m */; };
+		C0E787037A639A5D844E3447299540DA /* StretchyCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F430783BC8E6A6B49F6894A619C609BB /* StretchyCircleLayer.swift */; };
+		C5ABDEBBF5013A37E1ED32BC974A8EB1 /* FluidTabBarItemAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B07CC48896A62E89DBFA1686AA798B /* FluidTabBarItemAnimator.swift */; };
+		CFE2F68C772924BFAEF371B59CF12A2E /* FluidTabBarMoreItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B998BE12E596DE4C929D9E557CC198 /* FluidTabBarMoreItemContentView.swift */; };
+		D1E3036895F5F03143C561BFDDA09D1E /* FluidTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 022909D105283172FAB9369413858A48 /* FluidTabBarController-dummy.m */; };
+		D896A10636F4597FDD77ADF8AE4E57F9 /* FluidTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67345E4DE9FB89D145B25698BBCF1FF8 /* FluidTabBar.swift */; };
+		E7F20D1363537F39EE2D2994A52D4529 /* ContainerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4966E5981C361A1676A71CF5BAE9E229 /* ContainerAnimator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07A5AB989EE66E67E01F69ED37F658FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20AE85CAF6ACA875FD8937C7A48FF1D;
+			remoteInfo = FluidTabBarController;
+		};
+		4857FEEB8FCAE1D533BBF37C49322CF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39E295FC5CAF85B17C97E6DA94AFD8AE;
+			remoteInfo = "Pods-FintooApp";
+		};
+		6A82EFF42BAF531023B2400EF34961C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20AE85CAF6ACA875FD8937C7A48FF1D;
+			remoteInfo = FluidTabBarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022909D105283172FAB9369413858A48 /* FluidTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FluidTabBarController-dummy.m"; sourceTree = "<group>"; };
+		025C6E3057F3CBD75711FD8AA64FCBA4 /* Pods-FintooApp-FintooAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FintooApp-FintooAppUITests.modulemap"; sourceTree = "<group>"; };
+		025D2A4F94197F72268AC894B202B068 /* FluidTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FluidTabBarItem.swift; path = FluidTabBarController/FluidTabBarItem.swift; sourceTree = "<group>"; };
+		050FF8892883C3A66CEA5F6A1FD8E5DE /* Pods-FintooAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FintooAppTests.modulemap"; sourceTree = "<group>"; };
+		0C6E7BEDBFF585BCB0680EBE3E5BFBC5 /* Pods_FintooApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FintooApp.framework; path = "Pods-FintooApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		220693BD487C629C46C743E479EA9572 /* Pods-FintooApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FintooApp-frameworks.sh"; sourceTree = "<group>"; };
+		2A384664DA000304BCCD3489C9C8B4B3 /* Pods-FintooAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FintooAppTests-Info.plist"; sourceTree = "<group>"; };
+		2C74B744DB07560603BD01DA7E798039 /* FluidTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FluidTabBarController.framework; path = FluidTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2EFAF3C24E87DA31ABDE678BED3B95 /* LabelAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelAnimator.swift; path = FluidTabBarController/Animation/LabelAnimator.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32D400A329D701AF7D1CCAD0AAF59B11 /* Pods-FintooApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FintooApp-Info.plist"; sourceTree = "<group>"; };
+		3644A30641D318568CA658B04AEBC951 /* FluidTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FluidTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		3CC2FEAA768831DFBD9C71A16C7F2067 /* FluidTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FluidTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		42B9682D27CE994E953B802C4542018C /* CurveLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurveLayer.swift; path = FluidTabBarController/Animation/Layers/CurveLayer.swift; sourceTree = "<group>"; };
+		44183AEE35D03351EABF8CCB5E1F4A15 /* Pods-FintooApp-FintooAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FintooApp-FintooAppUITests-Info.plist"; sourceTree = "<group>"; };
+		45B07CC48896A62E89DBFA1686AA798B /* FluidTabBarItemAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FluidTabBarItemAnimator.swift; path = FluidTabBarController/Animation/FluidTabBarItemAnimator.swift; sourceTree = "<group>"; };
+		4966E5981C361A1676A71CF5BAE9E229 /* ContainerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerAnimator.swift; path = FluidTabBarController/Animation/ContainerAnimator.swift; sourceTree = "<group>"; };
+		5048F6C785411454E94E4808A6A046F1 /* FluidTabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FluidTabBarController-Info.plist"; sourceTree = "<group>"; };
+		52256B846A7B301DDC967699CE571EA8 /* TimingFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimingFunctions.swift; path = FluidTabBarController/Animation/TimingFunctions.swift; sourceTree = "<group>"; };
+		54BFCEAD322BAF754B4EDB6CC3CBF5C9 /* FluidTabBarItemContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FluidTabBarItemContentView.swift; path = FluidTabBarController/FluidTabBarItemContentView.swift; sourceTree = "<group>"; };
+		56BB7E11AA2A4536619D63A835A366EA /* Pods_FintooAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FintooAppTests.framework; path = "Pods-FintooAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D73F121B7404DD764B28BF80F927343 /* Pods-FintooApp-FintooAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FintooApp-FintooAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		625197FE3C985EB31427472B52088C66 /* FluidTabBarItemContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FluidTabBarItemContainer.swift; path = FluidTabBarController/FluidTabBarItemContainer.swift; sourceTree = "<group>"; };
+		62E04E5A01E3C4E8A633F7AF2230576A /* Pods-FintooApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FintooApp-umbrella.h"; sourceTree = "<group>"; };
+		655102EF528FF58411596977D55A22BC /* Pods-FintooApp-FintooAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FintooApp-FintooAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		668FCDBB5B0B01C186F15C8E4BB2B3FD /* FluidTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FluidTabBarController.modulemap; sourceTree = "<group>"; };
+		66BABB680CC8E66BE7BB6E516EC422CF /* Pods-FintooApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FintooApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67345E4DE9FB89D145B25698BBCF1FF8 /* FluidTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FluidTabBar.swift; path = FluidTabBarController/FluidTabBar.swift; sourceTree = "<group>"; };
+		69E8BCB50D6990AC49199CF43BABCAAC /* Pods-FintooAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FintooAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6EC0564FFE2ACEF7A745AA475F5247A2 /* Pods-FintooAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FintooAppTests-umbrella.h"; sourceTree = "<group>"; };
+		753690A8373FE4A9B50E8D83E5D0C42C /* Pods-FintooApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FintooApp.modulemap"; sourceTree = "<group>"; };
+		7670262FD0303CEDE9B98AAF6B0A1436 /* Pods-FintooApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FintooApp.debug.xcconfig"; sourceTree = "<group>"; };
+		867F7B1F2564BC08F5CB06BA49DA6AF2 /* Pods-FintooAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FintooAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8977AC6B668307F0F05EEAE1F32F0B4F /* Pods-FintooApp-FintooAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FintooApp-FintooAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		90FD051A33B94FA50025FEBCF41BF592 /* Pods-FintooAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FintooAppTests-dummy.m"; sourceTree = "<group>"; };
+		9A2BF7FABB753946D06E940D5AFC15C7 /* FluidTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FluidTabBarController.xcconfig; sourceTree = "<group>"; };
+		9A97B4268EAB112D9439F83B7B451BB2 /* Pods-FintooApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FintooApp-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A703D185EEDC409D927A3D27417212C9 /* Pods-FintooApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FintooApp.release.xcconfig"; sourceTree = "<group>"; };
+		A9B998BE12E596DE4C929D9E557CC198 /* FluidTabBarMoreItemContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FluidTabBarMoreItemContentView.swift; path = FluidTabBarController/FluidTabBarMoreItemContentView.swift; sourceTree = "<group>"; };
+		B1EC885CD2A20E7F9E546BCE71E3270C /* FluidTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FluidTabBarController.swift; path = FluidTabBarController/FluidTabBarController.swift; sourceTree = "<group>"; };
+		BBFDEA4194A75AE03A5DD5F752B82CA7 /* IconAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconAnimator.swift; path = FluidTabBarController/Animation/IconAnimator.swift; sourceTree = "<group>"; };
+		BFF55A4A6D4AFD84B1BCC23A2985CDD9 /* Pods-FintooAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FintooAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C693A789D73057C4ED4C0B9FB3FC045A /* Pods-FintooApp-FintooAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FintooApp-FintooAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC5EEE61C92F2D592E9017E60093AA84 /* FluidTabBarItemAnimatorDefault.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FluidTabBarItemAnimatorDefault.swift; path = FluidTabBarController/Animation/FluidTabBarItemAnimatorDefault.swift; sourceTree = "<group>"; };
+		D5808E1D72AF12328E0D5B79A3CF7286 /* Pods_FintooApp_FintooAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FintooApp_FintooAppUITests.framework; path = "Pods-FintooApp-FintooAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03E47CCD3E4D4DFD7A142C099821804 /* Pods-FintooAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FintooAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E25409CA9E22B8434168EFA7D3B8524D /* Pods-FintooApp-FintooAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FintooApp-FintooAppUITests-dummy.m"; sourceTree = "<group>"; };
+		F430783BC8E6A6B49F6894A619C609BB /* StretchyCircleLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StretchyCircleLayer.swift; path = FluidTabBarController/Animation/Layers/StretchyCircleLayer.swift; sourceTree = "<group>"; };
+		F6958C1E9546790DE9270A90C1BA2D66 /* Pods-FintooApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FintooApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE68A1D22E864C4F32F67AD12E79A578 /* Pods-FintooApp-FintooAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FintooApp-FintooAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF7A654AD860E2FA513F68CB132A254E /* Pods-FintooApp-FintooAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FintooApp-FintooAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10D97B1B2AFA2FEE3795E3FB7C182763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A14DD7AD10909C22BDFFB285F663919 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0540F0F4EA56A2707BDC6FEA71C29B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505FD7E1DF978DDFE92406BFF269A002 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8BCB271943BA78E6FF0EBA1E3750EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630E12F01B3DF474223929E570EB3CF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07DEAE2C20517B0D69D64C8F49804E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066D03B9A240AD71B1FBBBBC1BA636FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BC76DE047FF8C312620F46F2548CA42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				668FCDBB5B0B01C186F15C8E4BB2B3FD /* FluidTabBarController.modulemap */,
+				9A2BF7FABB753946D06E940D5AFC15C7 /* FluidTabBarController.xcconfig */,
+				022909D105283172FAB9369413858A48 /* FluidTabBarController-dummy.m */,
+				5048F6C785411454E94E4808A6A046F1 /* FluidTabBarController-Info.plist */,
+				3644A30641D318568CA658B04AEBC951 /* FluidTabBarController-prefix.pch */,
+				3CC2FEAA768831DFBD9C71A16C7F2067 /* FluidTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FluidTabBarController";
+			sourceTree = "<group>";
+		};
+		2DB9A682C8D2E1E9213ED9AD3D5E80E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68F84C3605FEB22BB3A3531E480B1237 /* FluidTabBarController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		466E13C4347867EC55E9AEA9B0764DDB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0A4EDA3456C14F9569C44AEF2752B62 /* Pods-FintooApp */,
+				5265564E0A1E3DA78FDE7A806E88EAF7 /* Pods-FintooApp-FintooAppUITests */,
+				5948D3AFCA6F3A65C960DC3E4C3C739A /* Pods-FintooAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5265564E0A1E3DA78FDE7A806E88EAF7 /* Pods-FintooApp-FintooAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				025C6E3057F3CBD75711FD8AA64FCBA4 /* Pods-FintooApp-FintooAppUITests.modulemap */,
+				C693A789D73057C4ED4C0B9FB3FC045A /* Pods-FintooApp-FintooAppUITests-acknowledgements.markdown */,
+				FE68A1D22E864C4F32F67AD12E79A578 /* Pods-FintooApp-FintooAppUITests-acknowledgements.plist */,
+				E25409CA9E22B8434168EFA7D3B8524D /* Pods-FintooApp-FintooAppUITests-dummy.m */,
+				FF7A654AD860E2FA513F68CB132A254E /* Pods-FintooApp-FintooAppUITests-frameworks.sh */,
+				44183AEE35D03351EABF8CCB5E1F4A15 /* Pods-FintooApp-FintooAppUITests-Info.plist */,
+				8977AC6B668307F0F05EEAE1F32F0B4F /* Pods-FintooApp-FintooAppUITests-umbrella.h */,
+				655102EF528FF58411596977D55A22BC /* Pods-FintooApp-FintooAppUITests.debug.xcconfig */,
+				5D73F121B7404DD764B28BF80F927343 /* Pods-FintooApp-FintooAppUITests.release.xcconfig */,
+			);
+			name = "Pods-FintooApp-FintooAppUITests";
+			path = "Target Support Files/Pods-FintooApp-FintooAppUITests";
+			sourceTree = "<group>";
+		};
+		5948D3AFCA6F3A65C960DC3E4C3C739A /* Pods-FintooAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				050FF8892883C3A66CEA5F6A1FD8E5DE /* Pods-FintooAppTests.modulemap */,
+				69E8BCB50D6990AC49199CF43BABCAAC /* Pods-FintooAppTests-acknowledgements.markdown */,
+				E03E47CCD3E4D4DFD7A142C099821804 /* Pods-FintooAppTests-acknowledgements.plist */,
+				90FD051A33B94FA50025FEBCF41BF592 /* Pods-FintooAppTests-dummy.m */,
+				2A384664DA000304BCCD3489C9C8B4B3 /* Pods-FintooAppTests-Info.plist */,
+				6EC0564FFE2ACEF7A745AA475F5247A2 /* Pods-FintooAppTests-umbrella.h */,
+				867F7B1F2564BC08F5CB06BA49DA6AF2 /* Pods-FintooAppTests.debug.xcconfig */,
+				BFF55A4A6D4AFD84B1BCC23A2985CDD9 /* Pods-FintooAppTests.release.xcconfig */,
+			);
+			name = "Pods-FintooAppTests";
+			path = "Target Support Files/Pods-FintooAppTests";
+			sourceTree = "<group>";
+		};
+		68F84C3605FEB22BB3A3531E480B1237 /* FluidTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				4966E5981C361A1676A71CF5BAE9E229 /* ContainerAnimator.swift */,
+				42B9682D27CE994E953B802C4542018C /* CurveLayer.swift */,
+				67345E4DE9FB89D145B25698BBCF1FF8 /* FluidTabBar.swift */,
+				B1EC885CD2A20E7F9E546BCE71E3270C /* FluidTabBarController.swift */,
+				025D2A4F94197F72268AC894B202B068 /* FluidTabBarItem.swift */,
+				45B07CC48896A62E89DBFA1686AA798B /* FluidTabBarItemAnimator.swift */,
+				CC5EEE61C92F2D592E9017E60093AA84 /* FluidTabBarItemAnimatorDefault.swift */,
+				625197FE3C985EB31427472B52088C66 /* FluidTabBarItemContainer.swift */,
+				54BFCEAD322BAF754B4EDB6CC3CBF5C9 /* FluidTabBarItemContentView.swift */,
+				A9B998BE12E596DE4C929D9E557CC198 /* FluidTabBarMoreItemContentView.swift */,
+				BBFDEA4194A75AE03A5DD5F752B82CA7 /* IconAnimator.swift */,
+				2D2EFAF3C24E87DA31ABDE678BED3B95 /* LabelAnimator.swift */,
+				F430783BC8E6A6B49F6894A619C609BB /* StretchyCircleLayer.swift */,
+				52256B846A7B301DDC967699CE571EA8 /* TimingFunctions.swift */,
+				0BC76DE047FF8C312620F46F2548CA42 /* Support Files */,
+			);
+			name = FluidTabBarController;
+			path = FluidTabBarController;
+			sourceTree = "<group>";
+		};
+		A61748379F7FA07ED740107227E29A58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C74B744DB07560603BD01DA7E798039 /* FluidTabBarController.framework */,
+				0C6E7BEDBFF585BCB0680EBE3E5BFBC5 /* Pods_FintooApp.framework */,
+				D5808E1D72AF12328E0D5B79A3CF7286 /* Pods_FintooApp_FintooAppUITests.framework */,
+				56BB7E11AA2A4536619D63A835A366EA /* Pods_FintooAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0A4EDA3456C14F9569C44AEF2752B62 /* Pods-FintooApp */ = {
+			isa = PBXGroup;
+			children = (
+				753690A8373FE4A9B50E8D83E5D0C42C /* Pods-FintooApp.modulemap */,
+				66BABB680CC8E66BE7BB6E516EC422CF /* Pods-FintooApp-acknowledgements.markdown */,
+				F6958C1E9546790DE9270A90C1BA2D66 /* Pods-FintooApp-acknowledgements.plist */,
+				9A97B4268EAB112D9439F83B7B451BB2 /* Pods-FintooApp-dummy.m */,
+				220693BD487C629C46C743E479EA9572 /* Pods-FintooApp-frameworks.sh */,
+				32D400A329D701AF7D1CCAD0AAF59B11 /* Pods-FintooApp-Info.plist */,
+				62E04E5A01E3C4E8A633F7AF2230576A /* Pods-FintooApp-umbrella.h */,
+				7670262FD0303CEDE9B98AAF6B0A1436 /* Pods-FintooApp.debug.xcconfig */,
+				A703D185EEDC409D927A3D27417212C9 /* Pods-FintooApp.release.xcconfig */,
+			);
+			name = "Pods-FintooApp";
+			path = "Target Support Files/Pods-FintooApp";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2DB9A682C8D2E1E9213ED9AD3D5E80E3 /* Pods */,
+				A61748379F7FA07ED740107227E29A58 /* Products */,
+				466E13C4347867EC55E9AEA9B0764DDB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2EADE79FEE10860B207E8B367F673A6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495EEF8592E714574CF9EDBCFE4BBEAE /* Pods-FintooApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		480204A2204B2DA980F0312A2B7ED08E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C71D264CC7BD5ADB05C5305977875D5 /* Pods-FintooApp-FintooAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FED5447662D14B580CB7ACF3824A17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083E1F15A6325136F05DEA95F3CE1786 /* FluidTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED22226006BC00E1BEA96A950F519DD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0794D1B694E142505589C5422BECE9DD /* Pods-FintooAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		034D2764EAB9CA0491E739E94A3097C9 /* Pods-FintooAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C672F58AAB6380A5B28DA1E4F0C0BC33 /* Build configuration list for PBXNativeTarget "Pods-FintooAppTests" */;
+			buildPhases = (
+				ED22226006BC00E1BEA96A950F519DD5 /* Headers */,
+				C36943B799582D20DA3BA22686800896 /* Sources */,
+				A8BCB271943BA78E6FF0EBA1E3750EC1 /* Frameworks */,
+				663A3D8B7660654E9C38E40EF0037C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				411291E52079C2E22CF87360685885DF /* PBXTargetDependency */,
+			);
+			name = "Pods-FintooAppTests";
+			productName = "Pods-FintooAppTests";
+			productReference = 56BB7E11AA2A4536619D63A835A366EA /* Pods_FintooAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		39E295FC5CAF85B17C97E6DA94AFD8AE /* Pods-FintooApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F25B8397D2BF5CB81636085A7033DF /* Build configuration list for PBXNativeTarget "Pods-FintooApp" */;
+			buildPhases = (
+				2EADE79FEE10860B207E8B367F673A6E /* Headers */,
+				6F89144C83103FCB0C8D432CD8465A81 /* Sources */,
+				10D97B1B2AFA2FEE3795E3FB7C182763 /* Frameworks */,
+				691489CE7D2367FC4B6C484B435B3AFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F1276C2198CF7306C8441000300CDA2 /* PBXTargetDependency */,
+			);
+			name = "Pods-FintooApp";
+			productName = "Pods-FintooApp";
+			productReference = 0C6E7BEDBFF585BCB0680EBE3E5BFBC5 /* Pods_FintooApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D20AE85CAF6ACA875FD8937C7A48FF1D /* FluidTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D48BD3AD1A8F9D711F1732E019D023 /* Build configuration list for PBXNativeTarget "FluidTabBarController" */;
+			buildPhases = (
+				C5FED5447662D14B580CB7ACF3824A17 /* Headers */,
+				21AC2E239DADCC7C2935E843403F9BD1 /* Sources */,
+				8F0540F0F4EA56A2707BDC6FEA71C29B /* Frameworks */,
+				33F9E6DFFC5C8F2361D3C05F9AC36905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FluidTabBarController;
+			productName = FluidTabBarController;
+			productReference = 2C74B744DB07560603BD01DA7E798039 /* FluidTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8560A8417B864AD10A07EB81439D6FE /* Pods-FintooApp-FintooAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26AED4CE1228AA0F4E9B692E25FACE1 /* Build configuration list for PBXNativeTarget "Pods-FintooApp-FintooAppUITests" */;
+			buildPhases = (
+				480204A2204B2DA980F0312A2B7ED08E /* Headers */,
+				638B1395790F1CB46B11944FD61BDB01 /* Sources */,
+				B07DEAE2C20517B0D69D64C8F49804E6 /* Frameworks */,
+				DA870CE5D3A9FD7C244BE5C7F78D55CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499E7131976959D4C39CB0E751229B2F /* PBXTargetDependency */,
+			);
+			name = "Pods-FintooApp-FintooAppUITests";
+			productName = "Pods-FintooApp-FintooAppUITests";
+			productReference = D5808E1D72AF12328E0D5B79A3CF7286 /* Pods_FintooApp_FintooAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A61748379F7FA07ED740107227E29A58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D20AE85CAF6ACA875FD8937C7A48FF1D /* FluidTabBarController */,
+				39E295FC5CAF85B17C97E6DA94AFD8AE /* Pods-FintooApp */,
+				E8560A8417B864AD10A07EB81439D6FE /* Pods-FintooApp-FintooAppUITests */,
+				034D2764EAB9CA0491E739E94A3097C9 /* Pods-FintooAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33F9E6DFFC5C8F2361D3C05F9AC36905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663A3D8B7660654E9C38E40EF0037C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		691489CE7D2367FC4B6C484B435B3AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA870CE5D3A9FD7C244BE5C7F78D55CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21AC2E239DADCC7C2935E843403F9BD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F20D1363537F39EE2D2994A52D4529 /* ContainerAnimator.swift in Sources */,
+				ABCBE17F23EE7E929379E38AB8BEC218 /* CurveLayer.swift in Sources */,
+				D896A10636F4597FDD77ADF8AE4E57F9 /* FluidTabBar.swift in Sources */,
+				D1E3036895F5F03143C561BFDDA09D1E /* FluidTabBarController-dummy.m in Sources */,
+				0AF2A11DD128DD73959D46B9523CC684 /* FluidTabBarController.swift in Sources */,
+				A2B93B42FEAA4957181B01DCCA1174C7 /* FluidTabBarItem.swift in Sources */,
+				C5ABDEBBF5013A37E1ED32BC974A8EB1 /* FluidTabBarItemAnimator.swift in Sources */,
+				255997BAD1F7EB3DA8E282AA0E2CDCD9 /* FluidTabBarItemAnimatorDefault.swift in Sources */,
+				970EC4876F7BC99A72DB3A6DF8421863 /* FluidTabBarItemContainer.swift in Sources */,
+				B19E46E970A73E24FAD26F9C73ED3FC4 /* FluidTabBarItemContentView.swift in Sources */,
+				CFE2F68C772924BFAEF371B59CF12A2E /* FluidTabBarMoreItemContentView.swift in Sources */,
+				45CB93EE77232A2B8E5EDB076403A661 /* IconAnimator.swift in Sources */,
+				78314B5B4DC6781780435DAFE5270FD6 /* LabelAnimator.swift in Sources */,
+				C0E787037A639A5D844E3447299540DA /* StretchyCircleLayer.swift in Sources */,
+				2D0EE8B16C7C99DDFA4E4559C2389B55 /* TimingFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638B1395790F1CB46B11944FD61BDB01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC8008A8522BB172F9677FE1A622CEC /* Pods-FintooApp-FintooAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F89144C83103FCB0C8D432CD8465A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5562431FADE499D4314E5BE39F342C50 /* Pods-FintooApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36943B799582D20DA3BA22686800896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0267EE53432FD5FE591F59EA5FC74B1F /* Pods-FintooAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		411291E52079C2E22CF87360685885DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FintooApp";
+			target = 39E295FC5CAF85B17C97E6DA94AFD8AE /* Pods-FintooApp */;
+			targetProxy = 4857FEEB8FCAE1D533BBF37C49322CF0 /* PBXContainerItemProxy */;
+		};
+		499E7131976959D4C39CB0E751229B2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FluidTabBarController;
+			target = D20AE85CAF6ACA875FD8937C7A48FF1D /* FluidTabBarController */;
+			targetProxy = 07A5AB989EE66E67E01F69ED37F658FB /* PBXContainerItemProxy */;
+		};
+		7F1276C2198CF7306C8441000300CDA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FluidTabBarController;
+			target = D20AE85CAF6ACA875FD8937C7A48FF1D /* FluidTabBarController */;
+			targetProxy = 6A82EFF42BAF531023B2400EF34961C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E51987E3105ED59C09D7624633A0F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2BF7FABB753946D06E940D5AFC15C7 /* FluidTabBarController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FluidTabBarController/FluidTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FluidTabBarController/FluidTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FluidTabBarController/FluidTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = FluidTabBarController;
+				PRODUCT_NAME = FluidTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18164A658C82A7536FC66641A34E8CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF55A4A6D4AFD84B1BCC23A2985CDD9 /* Pods-FintooAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FintooAppTests/Pods-FintooAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FintooAppTests/Pods-FintooAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D9508A19AD5495E663F923FA8252638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A703D185EEDC409D927A3D27417212C9 /* Pods-FintooApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FintooApp/Pods-FintooApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FintooApp/Pods-FintooApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		772087A6AE769456B5DD03205EB45745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2BF7FABB753946D06E940D5AFC15C7 /* FluidTabBarController.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FluidTabBarController/FluidTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FluidTabBarController/FluidTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FluidTabBarController/FluidTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = FluidTabBarController;
+				PRODUCT_NAME = FluidTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B73D24392AD976A91D0AF8AD84D4948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D73F121B7404DD764B28BF80F927343 /* Pods-FintooApp-FintooAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FintooApp-FintooAppUITests/Pods-FintooApp-FintooAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FintooApp-FintooAppUITests/Pods-FintooApp-FintooAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9ECBA68BC0575F0B5D75BAA3AD7F78D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7670262FD0303CEDE9B98AAF6B0A1436 /* Pods-FintooApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FintooApp/Pods-FintooApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FintooApp/Pods-FintooApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAE100FF8C9C4FA388CD2C3365F9B449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B46F68A2D072BAB23D9BC6AAB8A19740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867F7B1F2564BC08F5CB06BA49DA6AF2 /* Pods-FintooAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FintooAppTests/Pods-FintooAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FintooAppTests/Pods-FintooAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF50609BC89DAD6ED550CDA1861FE87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 655102EF528FF58411596977D55A22BC /* Pods-FintooApp-FintooAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FintooApp-FintooAppUITests/Pods-FintooApp-FintooAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FintooApp-FintooAppUITests/Pods-FintooApp-FintooAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0D3E8BE5BBDC05E33D6B4B1E8562585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE100FF8C9C4FA388CD2C3365F9B449 /* Debug */,
+				F0D3E8BE5BBDC05E33D6B4B1E8562585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D48BD3AD1A8F9D711F1732E019D023 /* Build configuration list for PBXNativeTarget "FluidTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E51987E3105ED59C09D7624633A0F54 /* Debug */,
+				772087A6AE769456B5DD03205EB45745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26AED4CE1228AA0F4E9B692E25FACE1 /* Build configuration list for PBXNativeTarget "Pods-FintooApp-FintooAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF50609BC89DAD6ED550CDA1861FE87D /* Debug */,
+				9B73D24392AD976A91D0AF8AD84D4948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C672F58AAB6380A5B28DA1E4F0C0BC33 /* Build configuration list for PBXNativeTarget "Pods-FintooAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46F68A2D072BAB23D9BC6AAB8A19740 /* Debug */,
+				18164A658C82A7536FC66641A34E8CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F25B8397D2BF5CB81636085A7033DF /* Build configuration list for PBXNativeTarget "Pods-FintooApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECBA68BC0575F0B5D75BAA3AD7F78D4 /* Debug */,
+				3D9508A19AD5495E663F923FA8252638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

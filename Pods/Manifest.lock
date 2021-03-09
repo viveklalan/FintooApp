@@ -1,0 +1,16 @@
+PODS:
+  - FluidTabBarController (0.5.3)
+
+DEPENDENCIES:
+  - FluidTabBarController
+
+SPEC REPOS:
+  trunk:
+    - FluidTabBarController
+
+SPEC CHECKSUMS:
+  FluidTabBarController: 14b2e61bcf03bc362ec2f4cba0dc804ee0a9c268
+
+PODFILE CHECKSUM: 2b8500520d1fd67afb3bf8353eb6a0c160f4a175
+
+COCOAPODS: 1.8.3

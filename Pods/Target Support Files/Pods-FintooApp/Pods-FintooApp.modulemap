@@ -1,0 +1,6 @@
+framework module Pods_FintooApp {
+  umbrella header "Pods-FintooApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
