@@ -22,7 +22,6 @@
 		4961443625F7C97D008725F0 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961443525F7C97D008725F0 /* DashboardVC.swift */; };
 		4961443E25F7CA48008725F0 /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961443D25F7CA48008725F0 /* CustomTabBarVC.swift */; };
 		4961444A25F7CACA008725F0 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961444925F7CACA008725F0 /* SettingVC.swift */; };
-		4961444F25F7CAD6008725F0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961444E25F7CAD6008725F0 /* ProfileVC.swift */; };
 		4961446025F7EE00008725F0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961445F25F7EE00008725F0 /* UIViewExtension.swift */; };
 		72598382F41E59823E50DF02 /* Pods_FintooApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E398119EDE4480D41D93A4D7 /* Pods_FintooApp.framework */; };
 		B86FBA9587CA249AA0346D83 /* Pods_FintooApp_FintooAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2FB158AD982A82CB30EE40 /* Pods_FintooApp_FintooAppUITests.framework */; };
@@ -69,7 +68,6 @@
 		4961443525F7C97D008725F0 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		4961443D25F7CA48008725F0 /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
 		4961444925F7CACA008725F0 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
-		4961444E25F7CAD6008725F0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		4961445F25F7EE00008725F0 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		52E41356E0AD95AED5B17728 /* Pods-FintooAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooAppTests.release.xcconfig"; path = "Target Support Files/Pods-FintooAppTests/Pods-FintooAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		71D8EC3122F82C1D83318FB0 /* Pods_FintooAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FintooAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +126,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		4939387225FD36CA00245EAF /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4961441325F7B6C3008725F0 /* Main.storyboard */,
+				496143D425F7B349008725F0 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		496143BD25F7B345008725F0 = {
 			isa = PBXGroup;
 			children = (
@@ -156,12 +163,11 @@
 			children = (
 				496143C925F7B345008725F0 /* AppDelegate.swift */,
 				496143CB25F7B345008725F0 /* SceneDelegate.swift */,
+				4939387225FD36CA00245EAF /* StoryBoard */,
 				491F51FE25FCC8A70083BD2F /* Utility */,
 				4961445E25F7EDE9008725F0 /* Extensions */,
 				4961445D25F7EDCF008725F0 /* Controller */,
 				496143D225F7B349008725F0 /* Assets.xcassets */,
-				4961441325F7B6C3008725F0 /* Main.storyboard */,
-				496143D425F7B349008725F0 /* LaunchScreen.storyboard */,
 				496143D725F7B349008725F0 /* Info.plist */,
 			);
 			path = FintooApp;
@@ -190,7 +196,6 @@
 			children = (
 				4961443525F7C97D008725F0 /* DashboardVC.swift */,
 				4961444925F7CACA008725F0 /* SettingVC.swift */,
-				4961444E25F7CAD6008725F0 /* ProfileVC.swift */,
 				4961443D25F7CA48008725F0 /* CustomTabBarVC.swift */,
 				491F51F925FCC86A0083BD2F /* BotChatVC.swift */,
 				4910CC6D25FCF9EA007AAB12 /* YourInfoVC.swift */,
@@ -456,7 +461,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				491F51FA25FCC86A0083BD2F /* BotChatVC.swift in Sources */,
-				4961444F25F7CAD6008725F0 /* ProfileVC.swift in Sources */,
 				4961443E25F7CA48008725F0 /* CustomTabBarVC.swift in Sources */,
 				4910CC6E25FCF9EA007AAB12 /* YourInfoVC.swift in Sources */,
 				496143CA25F7B345008725F0 /* AppDelegate.swift in Sources */,

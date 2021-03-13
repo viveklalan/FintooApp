@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
-class BotChatVC: UIViewController, UITextViewDelegate {
+class BotChatVC: UIViewController {
     
+    //MARK: Outlet
     @IBOutlet weak var messageTextField: UITextView!
     @IBOutlet weak var messageTableView: UITableView!
     
@@ -22,14 +23,16 @@ class BotChatVC: UIViewController, UITextViewDelegate {
         loadData()
     }
     
+    //hide unhide navigation bar
     override func viewWillAppear(_ animated: Bool){
-       super.viewWillAppear(animated)
-       self.navigationController?.isNavigationBarHidden = false
-      }
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewWillDisappear(_ animated: Bool){
-       super.viewWillDisappear(animated)
-       self.navigationController?.isNavigationBarHidden = true
-      }
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
     
     func setupViewOnLoad(){
         messageTextField.center = self.view.center
@@ -56,7 +59,6 @@ class BotChatVC: UIViewController, UITextViewDelegate {
             chatKeys.sort(by: <)
             messageTableView.reloadData()
             scrollToBottom()
-            
         } catch {
             print(error)
         }
@@ -81,20 +83,6 @@ class BotChatVC: UIViewController, UITextViewDelegate {
     @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
-        }
-    }
-    
-    //MARK:TextView Delegates
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if textView.textColor == UIColor.lightGray {
-            textView.text = ""
-            textView.textColor = UIColor.black
-        }
-    }
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if textView.text.isEmpty {
-            textView.text = "Write Your Message Here"
-            textView.textColor = UIColor.lightGray
         }
     }
     
@@ -123,6 +111,23 @@ class BotChatVC: UIViewController, UITextViewDelegate {
     }
 }
 
+//MARK:TextView Delegates
+extension BotChatVC: UITextViewDelegate{
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = ""
+            textView.textColor = UIColor.black
+        }
+    }
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Write Your Message Here"
+            textView.textColor = UIColor.lightGray
+        }
+    }
+}
+
+
 //MARK:TableView Delegates
 extension BotChatVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -132,7 +137,6 @@ extension BotChatVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row % 2 == 0{
             let cell = messageTableView.dequeueReusableCell(withIdentifier: "tocell", for: indexPath) as! toCell
-            
             cell.messageView.layer.cornerRadius = 4
             cell.messageLabel.text = chatDict[chatKeys[indexPath.row]]
             cell.messageTimeLabel.text = VLUtility.dateForTimestamp(ts: chatKeys[indexPath.row])
@@ -140,7 +144,6 @@ extension BotChatVC: UITableViewDelegate, UITableViewDataSource{
         }
         else{
             let cell = messageTableView.dequeueReusableCell(withIdentifier: "fromcell", for: indexPath) as! fromCell
-            
             cell.messageView.layer.cornerRadius = 4
             cell.messageLabel.text = chatDict[chatKeys[indexPath.row]]
             cell.messageTimeLabel.text = VLUtility.dateForTimestamp(ts: chatKeys[indexPath.row])

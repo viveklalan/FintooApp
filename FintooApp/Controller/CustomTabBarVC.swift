@@ -13,11 +13,10 @@ class CustomTabBarVC: FluidTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBar.tintColor = .red//UIColor(red: 0.2431372549, green: 0.4235294118, blue: 1, alpha: 1)
+        self.tabBar.tintColor = UIColor(red: 236/255, green: 128/255, blue: 107/255, alpha: 1)
         var viewControllers:[UIViewController] = []
-        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
+
         let dashboardVC = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
         let dashboard = FluidTabBarItem(title: "Dashboard", image: #imageLiteral(resourceName: "dashboard"), tag: 0)
         dashboard.imageColor = .lightGray
@@ -37,7 +36,6 @@ class CustomTabBarVC: FluidTabBarController {
         viewControllers.append(profileVC)
         
         self.setViewControllers(viewControllers, animated: true)
+        self.selectedIndex = 1
     }
-    
-
 }

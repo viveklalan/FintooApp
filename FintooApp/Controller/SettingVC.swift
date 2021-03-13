@@ -10,28 +10,32 @@ import DropDown
 
 class SettingVC: UIViewController {
     
+    //MARK: Outlet
     @IBOutlet weak var settingMenuTabs: UICollectionView!
     @IBOutlet weak var settingTabs: UICollectionView!
-    //For Radius
+    @IBOutlet weak var moreOptionMenuBUtton: UIButton!
+    //For adding corner radius
     @IBOutlet weak var messageCountLabel: UILabel!
     @IBOutlet weak var messageBackgroundView: UIView!
     @IBOutlet weak var optionCountLable: UILabel!
     @IBOutlet weak var optionCountBackgroundView: UIView!
     @IBOutlet weak var formContentView: UIView!
-    
+    @IBOutlet weak var leftArrowView: UIView!
+    @IBOutlet weak var rightArrowView: UIView!
+
     var settingMenuTabsData = [(name:"Your Info", image: "art1"), (name:"Know you better", image: "art2"), (name:"Know your risk", image: "art1"), (name:"Your family", image: "art2")]
-    
     var settingTabsVC = ["YourInfoVC", "DashboardVC", "DashboardVC", "DashboardVC"]
     
     var first: UIViewController!
     var selectedIndex = IndexPath(row: 0, section: 0)
-    
     let moreOptionsDropDown = DropDown()
-    @IBOutlet weak var moreOptionMenuBUtton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupViewsOnViewLoad()
+    }
+    
+    func setupViewsOnViewLoad(){
         moreOptionsDropDown.anchorView = moreOptionMenuBUtton
         moreOptionsDropDown.dataSource = ["Option 1","Option 2","Option 3","Option 4"]
         
@@ -40,8 +44,11 @@ class SettingVC: UIViewController {
         optionCountLable.addRadius(brRadius: 10.0)
         optionCountBackgroundView.addRadius(brRadius: 8.0)
         formContentView.addRadius(brRadius: 16.0)
+        leftArrowView.addRadius(brRadius: 17)
+        rightArrowView.addRadius(brRadius: 17)
     }
     
+    //MARK: Button Actions
     @IBAction func moreOptionsClicked(_ sender: Any) {
         moreOptionsDropDown.show()
         moreOptionsDropDown.selectionAction = {(index: Int, item: String) in
@@ -55,12 +62,14 @@ class SettingVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: false)
     }
     
+    @IBAction func leftArrowClicked(_ sender: Any) {
+    }
+    @IBAction func rightArrowClicked(_ sender: Any) {
+    }
     
 }
 
-
 //MARK: Collection View Delegate Datasource
-
 extension SettingVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -11,6 +11,7 @@ import RSSelectionMenu
 
 class YourInfoVC: UIViewController {
 
+    //MARK: Outlet
     @IBOutlet weak var investmentForTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var fixedLabel: UILabel!
     @IBOutlet weak var equityTypeSwitch: UISwitch!
@@ -18,17 +19,19 @@ class YourInfoVC: UIViewController {
     @IBOutlet weak var dateOfPurchaseTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var noOfUnitsTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var purchasePriceTextField: SkyFloatingLabelTextField!
-    
     @IBOutlet weak var addMoreButton: UIButton!
-    
     
     let investmentOptionArray = ["Self", "Wife", "Family"]
     var purchaseDatePicker = UIDatePicker()
     
+    let switchColor = UIColor(red: 20/255, green: 81/255, blue: 101/255, alpha: 1)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        setupViewsOnViewLoad()
+    }
+    
+    func setupViewsOnViewLoad(){
         /*For on state*/
         equityTypeSwitch.onTintColor = switchColor
 
@@ -46,9 +49,10 @@ class YourInfoVC: UIViewController {
         addMoreButton.addRadius(brRadius: 8)
         
         addDatePicker()
-        // Do any additional setup after loading the view.
+        purchasePriceTextField.delegate = self
     }
     
+    //MARK: BUtton Actions
     @IBAction func investmentForClicked(_ sender: Any) {
         let selectionMenu = RSSelectionMenu(selectionStyle: .single, dataSource: investmentOptionArray) { (cell, data, indexPath) in
             cell.textLabel?.text = data
@@ -60,7 +64,6 @@ class YourInfoVC: UIViewController {
         }
     }
     
-    let switchColor = UIColor(red: 20/255, green: 81/255, blue: 101/255, alpha: 1)
     @IBAction func equityTypeSwitchClicked(_ sender: Any) {
         if equityTypeSwitch.isOn{
             fixedLabel.font = UIFont.systemFont(ofSize: 14)
@@ -72,6 +75,35 @@ class YourInfoVC: UIViewController {
     }
     
     @IBAction func addMoreClicked(_ sender: Any) {
+        if investmentForTextField.text! == ""{
+            self.showAlert(title: "Error", message: "Please select who is this investment for?")
+            return
+        }
+        if dateOfPurchaseTextField.text! == ""{
+            self.showAlert(title: "Error", message: "Please select date of purchase")
+            return
+        }
+        if noOfUnitsTextField.text! == ""{
+            self.showAlert(title: "Error", message: "Please enter no. of unit")
+            return
+        }
+        if purchasePriceTextField.text! == ""{
+            self.showAlert(title: "Error", message: "Please enter purchase price")
+            return
+        }
+        
+        //If all fields availbale call api and show response
+        self.showAlert(title: "Thank you", message: "Record added successfully.")
+        investmentForTextField.text = ""
+        dateOfPurchaseTextField.text = ""
+        noOfUnitsTextField.text = ""
+        purchasePriceTextField.text = ""
+    }
+    
+    func showAlert(title:String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     //adding date picker to textfields
@@ -93,9 +125,8 @@ class YourInfoVC: UIViewController {
         purchaseDatePicker.minimumDate = Date()
         dateOfPurchaseTextField.inputAccessoryView = toolbar
         dateOfPurchaseTextField.inputView = purchaseDatePicker
-        
-        
     }
+    
     //MARK: toolbar actions
     @objc func donedatePicker(){
         let formatter = DateFormatter()
@@ -106,5 +137,17 @@ class YourInfoVC: UIViewController {
     
     @objc func cancelDatePicker(){
         self.view.endEditing(true)
+    }
+}
+
+//MARK: TextField Delegate
+extension YourInfoVC: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let text = (textField.text ?? "") as NSString
+        let newText = text.replacingCharacters(in: range, with: string)
+        if let regex = try? NSRegularExpression(pattern: "^[0-9]*((\\.|,)[0-9]{0,2})?$", options: .caseInsensitive) {
+            return regex.numberOfMatches(in: newText, options: .reportProgress, range: NSRange(location: 0, length: (newText as NSString).length)) > 0
+        }
+        return false
     }
 }
