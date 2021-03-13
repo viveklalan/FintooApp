@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		305E2774F49A087024768A08 /* Pods_FintooAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D8EC3122F82C1D83318FB0 /* Pods_FintooAppTests.framework */; };
+		4910CC6E25FCF9EA007AAB12 /* YourInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910CC6D25FCF9EA007AAB12 /* YourInfoVC.swift */; };
 		491F51FA25FCC86A0083BD2F /* BotChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F51F925FCC86A0083BD2F /* BotChatVC.swift */; };
 		491F520025FCCCC50083BD2F /* VLUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F51FF25FCCCC50083BD2F /* VLUtility.swift */; };
 		491F520525FCDAE90083BD2F /* chat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 491F520425FCDAE90083BD2F /* chat.plist */; };
@@ -48,6 +49,7 @@
 		1F6A748F0EE46EC91E441C60 /* Pods-FintooApp-FintooAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooApp-FintooAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FintooApp-FintooAppUITests/Pods-FintooApp-FintooAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1FB82D0B37E411DBA4E8780D /* Pods-FintooApp-FintooAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooApp-FintooAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FintooApp-FintooAppUITests/Pods-FintooApp-FintooAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3A3F344761F7D9F1B7B095C0 /* Pods-FintooAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FintooAppTests/Pods-FintooAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4910CC6D25FCF9EA007AAB12 /* YourInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourInfoVC.swift; sourceTree = "<group>"; };
 		491F51F925FCC86A0083BD2F /* BotChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotChatVC.swift; sourceTree = "<group>"; };
 		491F51FF25FCCCC50083BD2F /* VLUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLUtility.swift; sourceTree = "<group>"; };
 		491F520425FCDAE90083BD2F /* chat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = chat.plist; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				4961444E25F7CAD6008725F0 /* ProfileVC.swift */,
 				4961443D25F7CA48008725F0 /* CustomTabBarVC.swift */,
 				491F51F925FCC86A0083BD2F /* BotChatVC.swift */,
+				4910CC6D25FCF9EA007AAB12 /* YourInfoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				491F51FA25FCC86A0083BD2F /* BotChatVC.swift in Sources */,
 				4961444F25F7CAD6008725F0 /* ProfileVC.swift in Sources */,
 				4961443E25F7CA48008725F0 /* CustomTabBarVC.swift in Sources */,
+				4910CC6E25FCF9EA007AAB12 /* YourInfoVC.swift in Sources */,
 				496143CA25F7B345008725F0 /* AppDelegate.swift in Sources */,
 				4961444A25F7CACA008725F0 /* SettingVC.swift in Sources */,
 				4961446025F7EE00008725F0 /* UIViewExtension.swift in Sources */,

@@ -30,7 +30,7 @@ class CustomTabBarVC: FluidTabBarController {
         settingVC.tabBarItem = setting
         viewControllers.append(settingVC)
         
-        let profileVC = storyBoard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
+        let profileVC = storyBoard.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
         let profile = FluidTabBarItem(title: "Profile", image: #imageLiteral(resourceName: "profile"), tag: 0)
         profile.imageColor = .lightGray
         profileVC.tabBarItem = profile

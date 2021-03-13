@@ -1,16 +1,32 @@
 PODS:
+  - DropDown (2.3.13)
   - FluidTabBarController (0.5.3)
+  - IQKeyboardManagerSwift (6.5.6)
+  - RSSelectionMenu (7.1.2)
+  - SkyFloatingLabelTextField (3.8.0)
 
 DEPENDENCIES:
+  - DropDown
   - FluidTabBarController
+  - IQKeyboardManagerSwift
+  - RSSelectionMenu (~> 7.1.2)
+  - SkyFloatingLabelTextField (~> 3.0)
 
 SPEC REPOS:
   trunk:
+    - DropDown
     - FluidTabBarController
+    - IQKeyboardManagerSwift
+    - RSSelectionMenu
+    - SkyFloatingLabelTextField
 
 SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   FluidTabBarController: 14b2e61bcf03bc362ec2f4cba0dc804ee0a9c268
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  RSSelectionMenu: f803d0936e074b2fdac2c41bf1d0a5b0c7fdc3e1
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
 
-PODFILE CHECKSUM: 2b8500520d1fd67afb3bf8353eb6a0c160f4a175
+PODFILE CHECKSUM: ae0e8956b6896740467e9a24d546c78b40d0a1f4
 
 COCOAPODS: 1.8.3

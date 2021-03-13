@@ -10,6 +10,7 @@ pod 'FluidTabBarController'
 pod 'IQKeyboardManagerSwift'
 pod 'SkyFloatingLabelTextField', '~> 3.0'
 pod 'RSSelectionMenu', '~> 7.1.2'
+pod 'DropDown'
   # Pods for FintooApp
 
   target 'FintooAppTests' do
