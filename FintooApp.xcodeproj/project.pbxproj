@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		305E2774F49A087024768A08 /* Pods_FintooAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D8EC3122F82C1D83318FB0 /* Pods_FintooAppTests.framework */; };
+		491F51FA25FCC86A0083BD2F /* BotChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F51F925FCC86A0083BD2F /* BotChatVC.swift */; };
+		491F520025FCCCC50083BD2F /* VLUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F51FF25FCCCC50083BD2F /* VLUtility.swift */; };
+		491F520525FCDAE90083BD2F /* chat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 491F520425FCDAE90083BD2F /* chat.plist */; };
 		496143CA25F7B345008725F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496143C925F7B345008725F0 /* AppDelegate.swift */; };
 		496143CC25F7B345008725F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496143CB25F7B345008725F0 /* SceneDelegate.swift */; };
 		496143D325F7B349008725F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496143D225F7B349008725F0 /* Assets.xcassets */; };
@@ -19,6 +22,7 @@
 		4961443E25F7CA48008725F0 /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961443D25F7CA48008725F0 /* CustomTabBarVC.swift */; };
 		4961444A25F7CACA008725F0 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961444925F7CACA008725F0 /* SettingVC.swift */; };
 		4961444F25F7CAD6008725F0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961444E25F7CAD6008725F0 /* ProfileVC.swift */; };
+		4961446025F7EE00008725F0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961445F25F7EE00008725F0 /* UIViewExtension.swift */; };
 		72598382F41E59823E50DF02 /* Pods_FintooApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E398119EDE4480D41D93A4D7 /* Pods_FintooApp.framework */; };
 		B86FBA9587CA249AA0346D83 /* Pods_FintooApp_FintooAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2FB158AD982A82CB30EE40 /* Pods_FintooApp_FintooAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +48,9 @@
 		1F6A748F0EE46EC91E441C60 /* Pods-FintooApp-FintooAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooApp-FintooAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FintooApp-FintooAppUITests/Pods-FintooApp-FintooAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1FB82D0B37E411DBA4E8780D /* Pods-FintooApp-FintooAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooApp-FintooAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FintooApp-FintooAppUITests/Pods-FintooApp-FintooAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3A3F344761F7D9F1B7B095C0 /* Pods-FintooAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FintooAppTests/Pods-FintooAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		491F51F925FCC86A0083BD2F /* BotChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotChatVC.swift; sourceTree = "<group>"; };
+		491F51FF25FCCCC50083BD2F /* VLUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLUtility.swift; sourceTree = "<group>"; };
+		491F520425FCDAE90083BD2F /* chat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = chat.plist; sourceTree = "<group>"; };
 		496143C625F7B345008725F0 /* FintooApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FintooApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496143C925F7B345008725F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496143CB25F7B345008725F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 		4961443D25F7CA48008725F0 /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
 		4961444925F7CACA008725F0 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		4961444E25F7CAD6008725F0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4961445F25F7EE00008725F0 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		52E41356E0AD95AED5B17728 /* Pods-FintooAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooAppTests.release.xcconfig"; path = "Target Support Files/Pods-FintooAppTests/Pods-FintooAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		71D8EC3122F82C1D83318FB0 /* Pods_FintooAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FintooAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BA2EE30E02D4617E0B7449 /* Pods-FintooApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintooApp.debug.xcconfig"; path = "Target Support Files/Pods-FintooApp/Pods-FintooApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,9 +118,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		491F51FE25FCC8A70083BD2F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				491F51FF25FCCCC50083BD2F /* VLUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		496143BD25F7B345008725F0 = {
 			isa = PBXGroup;
 			children = (
+				491F520425FCDAE90083BD2F /* chat.plist */,
 				496143C825F7B345008725F0 /* FintooApp */,
 				496143DF25F7B349008725F0 /* FintooAppTests */,
 				496143EA25F7B349008725F0 /* FintooAppUITests */,
@@ -137,10 +154,9 @@
 			children = (
 				496143C925F7B345008725F0 /* AppDelegate.swift */,
 				496143CB25F7B345008725F0 /* SceneDelegate.swift */,
-				4961443525F7C97D008725F0 /* DashboardVC.swift */,
-				4961444925F7CACA008725F0 /* SettingVC.swift */,
-				4961444E25F7CAD6008725F0 /* ProfileVC.swift */,
-				4961443D25F7CA48008725F0 /* CustomTabBarVC.swift */,
+				491F51FE25FCC8A70083BD2F /* Utility */,
+				4961445E25F7EDE9008725F0 /* Extensions */,
+				4961445D25F7EDCF008725F0 /* Controller */,
 				496143D225F7B349008725F0 /* Assets.xcassets */,
 				4961441325F7B6C3008725F0 /* Main.storyboard */,
 				496143D425F7B349008725F0 /* LaunchScreen.storyboard */,
@@ -165,6 +181,26 @@
 				496143ED25F7B349008725F0 /* Info.plist */,
 			);
 			path = FintooAppUITests;
+			sourceTree = "<group>";
+		};
+		4961445D25F7EDCF008725F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4961443525F7C97D008725F0 /* DashboardVC.swift */,
+				4961444925F7CACA008725F0 /* SettingVC.swift */,
+				4961444E25F7CAD6008725F0 /* ProfileVC.swift */,
+				4961443D25F7CA48008725F0 /* CustomTabBarVC.swift */,
+				491F51F925FCC86A0083BD2F /* BotChatVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4961445E25F7EDE9008725F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4961445F25F7EE00008725F0 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F8CCA3A2843F6254E6044FA4 /* Frameworks */ = {
@@ -285,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491F520525FCDAE90083BD2F /* chat.plist in Resources */,
 				4961441425F7B6C3008725F0 /* Main.storyboard in Resources */,
 				496143D625F7B349008725F0 /* LaunchScreen.storyboard in Resources */,
 				496143D325F7B349008725F0 /* Assets.xcassets in Resources */,
@@ -415,11 +452,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491F51FA25FCC86A0083BD2F /* BotChatVC.swift in Sources */,
 				4961444F25F7CAD6008725F0 /* ProfileVC.swift in Sources */,
 				4961443E25F7CA48008725F0 /* CustomTabBarVC.swift in Sources */,
 				496143CA25F7B345008725F0 /* AppDelegate.swift in Sources */,
 				4961444A25F7CACA008725F0 /* SettingVC.swift in Sources */,
+				4961446025F7EE00008725F0 /* UIViewExtension.swift in Sources */,
 				4961443625F7C97D008725F0 /* DashboardVC.swift in Sources */,
+				491F520025FCCCC50083BD2F /* VLUtility.swift in Sources */,
 				496143CC25F7B345008725F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
